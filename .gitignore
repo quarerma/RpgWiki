@@ -34,3 +34,6 @@ yarn-error.log*
 
 .contentlayer
 .env
+
+# generated wiki manifest
+content/wiki-manifest.json

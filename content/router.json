@@ -1,0 +1,19 @@
+{
+  "pages": [
+    {
+      "url": "elminster",
+      "title": "Elminster",
+      "search_words": ["wizard", "shadowdale", "magician"]
+    },
+    {
+      "url": "drizzt-do-urden",
+      "title": "Drizzt Do'Urden",
+      "search_words": ["drow", "ranger", "icewind dale"]
+    },
+    {
+      "url": "shadowdale",
+      "title": "Shadowdale",
+      "search_words": ["dalelands", "town", "location"]
+    }
+  ]
+}

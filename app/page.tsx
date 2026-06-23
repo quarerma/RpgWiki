@@ -1,12 +1,32 @@
 import Link from "next/link"
 
+import { SearchBar } from "@/components/wiki/SearchBar"
 import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { getAllPages } from "@/lib/wiki/registry"
 
-export default function IndexPage() {
+export default function HomePage() {
+  const pages = getAllPages().sort((a, b) => a.title.localeCompare(b.title))
+
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex gap-4"></div>
-    </section>
+    <div className="container py-8">
+      <div className="mb-8">
+        <h1 className="text-4xl font-bold tracking-tight">{siteConfig.name}</h1>
+        <p className="mt-2 max-w-2xl text-muted-foreground">
+          {siteConfig.description}
+        </p>
+      </div>
+      <SearchBar pages={pages} />
+      <p className="mt-8 text-sm text-muted-foreground">
+        {pages.length} page{pages.length === 1 ? "" : "s"} in the wiki.
+        {pages[0] && (
+          <>
+            {" "}
+            <Link href={`/${pages[0].url}`} className="wiki-link">
+              Browse an article
+            </Link>
+          </>
+        )}
+      </p>
+    </div>
   )
 }
