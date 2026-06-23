@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 
 import { WikiPageLayout } from "@/components/wiki/WikiPageLayout"
 import { loadPageContent } from "@/lib/wiki/load-page"
+import { getPageImageUrl } from "@/lib/wiki/page-image"
 import { parseMarkdown } from "@/lib/wiki/parse-markdown"
 import { getAllPages, getPageBySlug } from "@/lib/wiki/registry"
 
@@ -30,6 +31,9 @@ export default async function WikiPage({ params }: WikiPageProps) {
 
   const { markdown } = await loadPageContent(page)
   const html = await parseMarkdown(markdown, page.folder)
+  const imageUrl = getPageImageUrl(page.folder)
 
-  return <WikiPageLayout title={page.title} html={html} />
+  return (
+    <WikiPageLayout title={page.title} html={html} imageUrl={imageUrl} />
+  )
 }
