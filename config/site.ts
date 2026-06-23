@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Next.js",
+  name: "Contos de Faerun Wiki",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Uma wiki para detalhar os muitos personagens, monstros, itens e locais do mundo de Faerun.",
   mainNav: [
     {
       title: "Home",
@@ -11,8 +11,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+    twitter: "https://x.com/quarerma_",
+    github: "https://github.com/quarerma/",
+    instagram: "https://www.instagram.com/quarerma_/",
   },
 }

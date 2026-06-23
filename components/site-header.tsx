@@ -43,6 +43,21 @@ export function SiteHeader() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
+            <Link
+              href={siteConfig.links.instagram}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.instagram className="h-5 w-5 " />
+                <span className="sr-only">Instagram</span>
+              </div>
+            </Link>
             <ThemeToggle />
           </nav>
         </div>
