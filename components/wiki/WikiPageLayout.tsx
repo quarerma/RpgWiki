@@ -17,6 +17,8 @@ export function WikiPageLayout({
   imageUrl,
   info,
 }: WikiPageLayoutProps) {
+  const displayTitle = info?.title ?? title
+
   return (
     <article className="container py-8">
       <nav className="mb-6 text-sm text-muted-foreground">
@@ -50,7 +52,7 @@ export function WikiPageLayout({
               )}
             </div>
             <figcaption className=" text-center text-sm italic text-muted-foreground">
-              {title}
+              {displayTitle}
             </figcaption>
           </figure>
           {info ? <WikiPageInfo info={info} /> : null}

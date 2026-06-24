@@ -13,6 +13,7 @@ export interface PageInfoSection {
 }
 
 export interface PageInfo {
+  title?: string
   sections: PageInfoSection[]
 }
 
@@ -42,6 +43,7 @@ export async function loadPageInfo(folder: string): Promise<PageInfo | null> {
 
   const raw = await readFile(infoPath, "utf-8")
   const data = JSON.parse(raw) as Record<string, unknown>
+  const title = typeof data.title === "string" ? data.title : undefined
   const sections: PageInfoSection[] = []
 
   for (const [key, value] of Object.entries(data)) {
@@ -58,5 +60,9 @@ export async function loadPageInfo(folder: string): Promise<PageInfo | null> {
     })
   }
 
-  return sections.length > 0 ? { sections } : null
+  if (sections.length === 0 && !title) {
+    return null
+  }
+
+  return { title, sections }
 }

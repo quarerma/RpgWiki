@@ -9,6 +9,11 @@
       "url": "nome",
       "title": "Nome de Bromélia",
       "search_words": ["nome", "bromelia", "nome de bromélia"]
+    },
+    {
+      "url": "ester",
+      "title": "Ester",
+      "search_words": ["ester", "estrela"]
     }
   ]
 }
