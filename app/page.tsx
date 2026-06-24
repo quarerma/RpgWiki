@@ -3,6 +3,7 @@ import Link from "next/link"
 import { SearchBar } from "@/components/wiki/SearchBar"
 import { siteConfig } from "@/config/site"
 import { getAllPages } from "@/lib/wiki/registry"
+import { wikiLinkClass } from "@/lib/wiki/tailwind-classes"
 
 export default function HomePage() {
   const pages = getAllPages().sort((a, b) => a.title.localeCompare(b.title))
@@ -21,7 +22,7 @@ export default function HomePage() {
         {pages[0] && (
           <>
             {" "}
-            <Link href={`/${pages[0].url}`} className="wiki-link">
+            <Link href={`/${pages[0].url}`} className={wikiLinkClass}>
               Browse an article
             </Link>
           </>

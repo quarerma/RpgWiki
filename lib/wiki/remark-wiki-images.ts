@@ -3,6 +3,7 @@ import type { Root } from "hast"
 import type { Plugin } from "unified"
 
 import { getRegistry } from "@/lib/wiki/registry"
+import { wikiLinkClass, wikiLinkMissingClass } from "@/lib/wiki/tailwind-classes"
 
 function rewriteImageSrc(src: string, folder: string): string {
   const normalized = src.replace(/^\.\//, "")
@@ -44,7 +45,7 @@ export const rehypeWikiLinkClasses: Plugin<[], Root> = () => {
 
       const slug = href.slice(1)
       const exists = registry.bySlug.has(slug)
-      node.properties.className = exists ? "wiki-link" : "wiki-link-missing"
+      node.properties.className = exists ? wikiLinkClass : wikiLinkMissingClass
     })
   }
 }

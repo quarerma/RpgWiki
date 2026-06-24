@@ -15,4 +15,5 @@ export const siteConfig = {
     github: "https://github.com/quarerma/",
     instagram: "https://www.instagram.com/quarerma_/",
   },
+  contactEmail: "gabriel.oliveira.quaresma@gmail.com",
 }

@@ -1,0 +1,27 @@
+{
+  "title": "Maya",
+  "Informação de Personagem": {
+    "Raça": "Humano",
+    "Pronomes": "Quaisquer",
+    "Sexualidade": "Pansexual",
+    "Também conhecido como": "Princesa de Faerûn, por [[ Nome ]]",
+    "Alinhamento": "Caótico Bom",
+    "Idade": "22 anos",
+    "Altura": "1.68m",
+    "Linguagens": [
+      "Comum",
+      "Amnian",
+      "Licras",
+      "Thieves Cant",
+      "Infernal",
+      "Sylvan",
+      "Élfico"
+    ],
+    "Classe": "Clérigo / Bruxo",
+    "Conexões": [
+      "[[ Xheyotics ]] (fundadora)",
+      "Leira",
+      "The Brotherhood of Steel Torbold"
+    ]
+  }
+}

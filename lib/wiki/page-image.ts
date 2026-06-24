@@ -3,17 +3,7 @@ import path from "path"
 
 import { getPageImagesDir } from "@/lib/wiki/paths"
 
-const PREFERRED_IMAGE_NAMES = [
-  "portrait.png",
-  "portrait.jpg",
-  "portrait.jpeg",
-  "cover.png",
-  "cover.jpg",
-  "cover.jpeg",
-  "image.png",
-  "image.jpg",
-  "image.jpeg",
-]
+const PREFERRED_IMAGE_NAMES = ["portrait.png", "portrait.jpg", "portrait.jpeg"]
 
 const IMAGE_EXTENSIONS = /\.(png|jpe?g|gif|webp|svg)$/i
 
