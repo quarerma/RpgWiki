@@ -8,8 +8,8 @@ import {
   WikiRegistry,
 } from "@/lib/wiki/types"
 
-function normalizeTitle(title: string): string {
-  return title.trim().toLowerCase()
+function normalizeLookup(text: string): string {
+  return text.trim().toLowerCase()
 }
 
 function buildRegistry(config: RouterConfig): WikiRegistry {
@@ -21,13 +21,18 @@ function buildRegistry(config: RouterConfig): WikiRegistry {
 
   const bySlug = new Map<string, WikiPage>()
   const byTitle = new Map<string, WikiPage>()
+  const bySearchWord = new Map<string, WikiPage>()
 
   for (const page of pages) {
     bySlug.set(page.url, page)
-    byTitle.set(normalizeTitle(page.title), page)
+    byTitle.set(normalizeLookup(page.title), page)
+
+    for (const word of page.search_words ?? []) {
+      bySearchWord.set(normalizeLookup(word), page)
+    }
   }
 
-  return { pages, bySlug, byTitle }
+  return { pages, bySlug, byTitle, bySearchWord }
 }
 
 let cachedRegistry: WikiRegistry | null = null
@@ -55,7 +60,7 @@ export function getPageBySlug(slug: string): WikiPage | undefined {
 }
 
 export function getPageByTitle(title: string): WikiPage | undefined {
-  return getRegistry().byTitle.get(normalizeTitle(title))
+  return getRegistry().byTitle.get(normalizeLookup(title))
 }
 
 export function resolveWikiLink(target: string): {
@@ -64,14 +69,21 @@ export function resolveWikiLink(target: string): {
   exists: boolean
 } {
   const registry = getRegistry()
-  const byTitle = registry.byTitle.get(normalizeTitle(target))
+  const key = normalizeLookup(target)
+
+  const byTitle = registry.byTitle.get(key)
   if (byTitle) {
     return { page: byTitle, slug: byTitle.url, exists: true }
   }
 
-  const bySlug = registry.bySlug.get(target)
+  const bySlug = registry.bySlug.get(key)
   if (bySlug) {
     return { page: bySlug, slug: bySlug.url, exists: true }
+  }
+
+  const bySearchWord = registry.bySearchWord.get(key)
+  if (bySearchWord) {
+    return { page: bySearchWord, slug: bySearchWord.url, exists: true }
   }
 
   const slug = target

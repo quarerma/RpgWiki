@@ -5,8 +5,8 @@ export function SiteFooter() {
     <footer className="border-t">
       <div className="container py-6">
         <p className="max-w-3xl text-xs leading-relaxed text-muted-foreground">
-          As imagens exibidas neste site são apenas para referência pessoal de
-          campanha. Não reivindico a propriedade de obras de terceiros. Se você
+          As imagens exibidas neste site são apenas para referência pessoal do
+          universo. Não reivindico a propriedade de obras de terceiros. Se você
           é titular dos direitos e deseja a remoção de alguma imagem, entre em
           contato em{" "}
           <a

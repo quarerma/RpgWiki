@@ -26,7 +26,7 @@ export function WikiPageLayout({
         <span className="mx-2">/</span>
         <span>{title}</span>
       </nav>
-      <header className="mb-8 border-b pb-4">
+      <header className="mb-4 border-b pb-4">
         <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
       </header>
       <div className="w-full">

@@ -30,6 +30,7 @@ export interface WikiRegistry {
   pages: WikiPage[]
   bySlug: Map<string, WikiPage>
   byTitle: Map<string, WikiPage>
+  bySearchWord: Map<string, WikiPage>
 }
 
 export const RESERVED_SLUGS = new Set([

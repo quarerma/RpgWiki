@@ -4,6 +4,11 @@
       "url": "maya",
       "title": "Maya",
       "search_words": ["maya"]
+    },
+    {
+      "url": "nome",
+      "title": "Nome de Bromélia",
+      "search_words": ["nome", "bromelia", "nome de bromélia"]
     }
   ]
 }
