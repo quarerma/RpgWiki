@@ -28,11 +28,11 @@ export function WikiPageLayout({
         <span className="mx-2">/</span>
         <span>{title}</span>
       </nav>
-      <header className="mb-4 border-b pb-4">
+      <header className="mb-4 pb-4">
         <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
       </header>
-      <div className="w-full">
-        <aside className="float-right mb-4 ml-6 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] border border-border p-2">
+      <div className="flex flex-col md:block">
+        <aside className="mb-4 w-full border border-border p-2 md:float-right md:ml-6 md:w-auto md:max-w-[350px]">
           <figure className="">
             <div className="rounded-none">
               {imageUrl ? (

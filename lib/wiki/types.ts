@@ -1,6 +1,7 @@
 export interface WikiPageEntry {
   url: string
   title: string
+  type?: string
   search_words?: string[]
   folder?: string
 }

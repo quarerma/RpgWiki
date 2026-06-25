@@ -3,22 +3,38 @@
     {
       "url": "maya",
       "title": "Maya",
+      "type": "character",
       "search_words": ["maya"]
     },
     {
       "url": "nome",
       "title": "Nome de Bromélia",
+      "type": "character",
       "search_words": ["nome", "bromelia", "nome de bromélia"]
     },
     {
       "url": "ester",
       "title": "Ester",
+      "type": "character",
       "search_words": ["ester", "estrela"]
     },
     {
       "url": "xheyotics",
       "title": "Xheyotics",
+      "type": "adventuring_party",
       "search_words": ["xheyotics"]
+    },
+    {
+      "url": "tethyr",
+      "title": "Tethyr",
+      "type": "location",
+      "search_words": ["tethyr"]
+    },
+    {
+      "url": "amn",
+      "title": "Amn",
+      "type": "location",
+      "search_words": ["amn"]
     }
   ]
 }

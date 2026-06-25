@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "validate-wiki": "tsx scripts/validate-wiki.ts",
+    "create-page": "tsx scripts/create-wiki-page.ts",
     "build": "npm run validate-wiki && next build",
     "start": "next start",
     "lint": "next lint",
