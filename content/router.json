@@ -35,6 +35,126 @@
       "title": "Amn",
       "type": "location",
       "search_words": ["amn"]
+    },
+    {
+      "url": "baldurs-gate",
+      "title": "Baldurs gate",
+      "type": "location",
+      "search_words": ["baldurs-gate"]
+    },
+    {
+      "url": "angla-vled",
+      "title": "Angla vled",
+      "type": "location",
+      "search_words": ["angla-vled"]
+    },
+    {
+      "url": "eltugard",
+      "title": "Eltugard",
+      "type": "location",
+      "search_words": ["eltugard"]
+    },
+    {
+      "url": "elturel",
+      "title": "Elturel",
+      "type": "location",
+      "search_words": ["elturel"]
+    },
+    {
+      "url": "scornubel",
+      "title": "Scornubel",
+      "type": "location",
+      "search_words": ["scornubel"]
+    },
+    {
+      "url": "nythalos",
+      "title": "Nythalos Vaelish",
+      "type": "character",
+      "search_words": ["nythalos"]
+    },
+    {
+      "url": "semruk",
+      "title": "Sem'ruk",
+      "type": "character",
+      "search_words": ["semruk"]
+    },
+    {
+      "url": "arhmranda",
+      "title": "Arhmranda Pessac Elmyr",
+      "type": "character",
+      "search_words": ["arhmranda"]
+    },
+    {
+      "url": "carlo-razac",
+      "title": "Carlo razac",
+      "type": "character",
+      "search_words": ["carlo-razac"]
+    },
+    {
+      "url": "severin-springore",
+      "title": "Severin springore",
+      "type": "character",
+      "search_words": ["severin-springore"]
+    },
+    {
+      "url": "clamror-errhylon",
+      "title": "Clamror errhylon",
+      "type": "character",
+      "search_words": ["clamror-errhylon"]
+    },
+    {
+      "url": "nessa-cooperhand",
+      "title": "Nessa Cooperhand Longwood",
+      "type": "character",
+      "search_words": ["nessa-cooperhand"]
+    },
+    {
+      "url": "ellio-vaelis",
+      "title": "Ellio Vaelis Cooperhand",
+      "type": "character",
+      "search_words": ["ellio-vaelis"]
+    },
+    {
+      "url": "heris",
+      "title": "Héris",
+      "type": "character",
+      "search_words": ["heris", "ambrose"]
+    },
+    {
+      "url": "arannis",
+      "title": "Arannis",
+      "type": "character",
+      "search_words": ["arannis"]
+    },
+    {
+      "url": "araleth",
+      "title": "Araleth",
+      "type": "character",
+      "search_words": ["araleth"]
+    },
+    {
+      "url": "megaira",
+      "title": "Megaira",
+      "type": "character",
+      "search_words": ["megaira"]
+    },
+    {
+      "url": "kalphyss",
+      "title": "Kalphyss",
+      "type": "character",
+      "search_words": ["kalphyss"]
+    },
+    {
+      "url": "thorn",
+      "title": "Thorn",
+      "type": "character",
+      "search_words": ["thorn"]
+    },
+    {
+      "url": "amrod",
+      "title": "Varomir Von Velthrae",
+      "type": "character",
+      "search_words": ["amrod"]
     }
   ]
 }

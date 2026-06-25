@@ -3,6 +3,7 @@ import Link from "next/link"
 import { PageInfo } from "@/lib/wiki/load-page-info"
 import { WikiContent } from "@/components/wiki/WikiContent"
 import { WikiPageInfo } from "@/components/wiki/WikiPageInfo"
+import { cn } from "@/lib/utils"
 
 interface WikiPageLayoutProps {
   title: string
@@ -32,7 +33,14 @@ export function WikiPageLayout({
         <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
       </header>
       <div className="flex flex-col md:block">
-        <aside className="mb-4 w-full border border-border p-2 md:float-right md:ml-6 md:w-auto md:max-w-[350px]">
+        <aside
+          className={cn(
+            "mb-4 w-full border border-border p-2 md:float-right md:ml-6",
+            imageUrl
+              ? "md:w-auto md:max-w-[350px]"
+              : "md:w-full md:min-w-[280px] md:max-w-[280px] lg:max-w-[320px] xl:max-w-[350px]"
+          )}
+        >
           <figure className="">
             <div className="rounded-none">
               {imageUrl ? (
