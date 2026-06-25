@@ -22,4 +22,4 @@ Fora dessas situações, Ester é cuidadosa, observadora e altruísta, frequente
 
 Outro traço marcante é seu intenso fascínio por doces. Já chegou a viajar por semanas em busca de uma caixa de biscoitos lunares no norte de Faerûn.
 
-Sua rotina de sono também é instável, especialmente durante as semanas de lua cheia, quando tende a inverter a ficar noites em claro para contemplar a beleza de sua Deusa.
+Sua rotina de sono também é instável, especialmente durante as semanas de lua cheia, quando tende a ficar noites em claro para contemplar a beleza de sua Deusa.
