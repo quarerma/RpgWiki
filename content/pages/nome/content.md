@@ -12,4 +12,4 @@ Sua estrutura metálica leve distribui as cargas mecânicas entre as articulaç�
 
 **Disparo Balístico**: um poderoso disparo de força e pressão que empurra inimigos para longe;
 
-**Pulso de Energia**: cria uma película energético em aliados à até 3 metros de alcance.
+**Pulso de Energia**: cria uma película protetora energética em aliados a até 3 metros de alcance.
