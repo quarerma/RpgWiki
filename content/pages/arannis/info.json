@@ -1,3 +1,15 @@
 {
-  "title": "Arannis"
+  "title": "Arannis",
+  "Informação de Personagem": {
+    "Raça": "Elfo",
+    "Pronomes": "Ele/Dele",
+    "Sexualidade": "Héterossexual",
+    "Também conhecido como": "Broxa (por [[ Xheyotics ]])",
+    "Alinhamento": "Neutro Bom",
+    "Idade": "118 anos",
+    "Altura": "1.87m",
+    "Linguagens": ["Comum", "Thieves Cant", "Élfico"],
+    "Classe": "Guerreiro",
+    "Conexões": ["[[ Xheyotics ]] (líder)"]
+  }
 }
