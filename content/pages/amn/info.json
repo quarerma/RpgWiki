@@ -1,3 +1,22 @@
 {
-  "title": "Amn"
+  "title": "Amn",
+  "Geografia": {
+    "Conhecido por": "Domínio Mercante",
+    "Localização": "Terras da Intriga",
+    "Capital": "Athkhalla"
+  },
+  "População": {
+    "Denominacão": "Amnianos",
+    "População": "3.000.000",
+    "Raças": ["Humano", "Halfling", "Meio-orcs", "Outros"],
+    "Religiões": [
+      "Selûne",
+      "Cyric",
+      "Umberlee",
+      "Bhaal",
+      "Chauntea",
+      "Waukeen"
+    ],
+    "Alinhamentos": ["Neutro Bom", "Neutro", "Leal e Mal"]
+  }
 }

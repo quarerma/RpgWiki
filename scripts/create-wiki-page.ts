@@ -11,6 +11,13 @@ import {
 } from "../lib/wiki/paths"
 import { RESERVED_SLUGS, RouterConfig } from "../lib/wiki/types"
 
+const PAGE_TEMPLATES_DIR = path.join(__dirname, "page-templates")
+
+const INFO_TEMPLATES: Record<string, string> = {
+  character: path.join(PAGE_TEMPLATES_DIR, "character-info.json"),
+  location: path.join(PAGE_TEMPLATES_DIR, "location-info.json"),
+}
+
 function usage(): never {
   console.error(`Usage: npm run create-page -- <slug> [title] [--type <type>] [--skip-router]
 
@@ -104,6 +111,23 @@ function parseArgs(argv: string[]): {
   return { slug, title, type, skipRouter }
 }
 
+function getDefaultInfo(title: string, type?: string): Record<string, unknown> {
+  const templatePath = type && INFO_TEMPLATES[type]
+  if (!templatePath) {
+    return { title }
+  }
+
+  if (!existsSync(templatePath)) {
+    fail(`Missing info template for type "${type}": ${templatePath}`)
+  }
+
+  const template = JSON.parse(
+    readFileSync(templatePath, "utf-8")
+  ) as Record<string, unknown>
+
+  return { title, ...template }
+}
+
 function validateSlug(slug: string, title: string, router: RouterConfig): void {
   if (RESERVED_SLUGS.has(slug)) {
     fail(`Reserved slug: ${slug}`)
@@ -128,7 +152,7 @@ function validateSlug(slug: string, title: string, router: RouterConfig): void {
   }
 }
 
-function createPageFiles(slug: string, title: string): void {
+function createPageFiles(slug: string, title: string, type?: string): void {
   const pageDir = path.join(PAGES_DIR, slug)
   const imagesDir = getPageImagesDir(slug)
 
@@ -140,7 +164,7 @@ function createPageFiles(slug: string, title: string): void {
   )
   writeFileSync(
     getPageInfoPath(slug),
-    JSON.stringify({ title }, null, 2) + "\n",
+    JSON.stringify(getDefaultInfo(title, type), null, 2) + "\n",
     "utf-8"
   )
   writeFileSync(path.join(imagesDir, ".gitkeep"), "", "utf-8")
@@ -175,7 +199,7 @@ function main(): void {
 
   const router = JSON.parse(readFileSync(ROUTER_PATH, "utf-8")) as RouterConfig
   validateSlug(slug, title, router)
-  createPageFiles(slug, title)
+  createPageFiles(slug, title, type)
 
   if (!skipRouter) {
     addToRouter(slug, title, type)
