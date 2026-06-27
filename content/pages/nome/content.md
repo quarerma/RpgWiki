@@ -8,7 +8,7 @@ Sua estrutura metálica leve distribui as cargas mecânicas entre as articulaç�
 
 ![right](Sucatinha.png) **Sucatinha** é um gato robótico baseado na fisionomia de uma Replacer Beast da Feywild. Dentre todas suas funcionalidades, a mais marcante definitivamente é sua capacidade de tentar imitar outros felinos. Além disso em combate, realiza ações como:
 
-**Arco de fogo**: que incendeia uma área de 4,5m em arco à sua frente;
+**Arco de fogo**: incendeia uma área de 4,5m em arco à sua frente;
 
 **Disparo Balístico**: um poderoso disparo de força e pressão que empurra inimigos para longe;
 
