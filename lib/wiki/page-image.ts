@@ -20,13 +20,5 @@ export function getPageImageUrl(folder: string): string | null {
     }
   }
 
-  const files = readdirSync(imagesDir)
-    .filter((file) => IMAGE_EXTENSIONS.test(file))
-    .sort()
-
-  if (files.length === 0) {
-    return null
-  }
-
-  return `/wiki-assets/${folder}/images/${files[0]}`
+  return null
 }

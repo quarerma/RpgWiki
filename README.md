@@ -1,25 +1,15 @@
-# next-template
+## Page content structure
 
-> **Warning**
-> This template is deprecated. You can now create a new Next.js project using the shadcn CLI: `npx shadcn init`.
+| page-name
+content.md
+info.json
+| images
+portrait.(png / jpg / jpeg) for profile picture
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+Sections must be separated with `##` as title
 
-## Usage
+If you want to add an image to the text add
 
-```bash
-npx create-next-app -e https://github.com/shadcn/next-template
 ```
-
-## Features
-
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
-
-## License
-
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+ ![right / left](filename)
+```

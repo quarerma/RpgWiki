@@ -1,17 +1,17 @@
-import { visit } from "unist-util-visit"
 import type { Root } from "hast"
 import type { Plugin } from "unified"
+import { visit } from "unist-util-visit"
 
 import { getRegistry } from "@/lib/wiki/registry"
-import { wikiLinkClass, wikiLinkMissingClass } from "@/lib/wiki/tailwind-classes"
+import {
+  wikiLinkClass,
+  wikiLinkMissingClass,
+} from "@/lib/wiki/tailwind-classes"
 
 function rewriteImageSrc(src: string, folder: string): string {
   const normalized = src.replace(/^\.\//, "")
-  if (normalized.startsWith("images/")) {
-    const filename = normalized.slice("images/".length)
-    return `/wiki-assets/${folder}/images/${filename}`
-  }
-  return src
+
+  return `/wiki-assets/${folder}/images/${src}`
 }
 
 export const rehypeWikiImages: Plugin<[string], Root> = (folder) => {
@@ -22,9 +22,18 @@ export const rehypeWikiImages: Plugin<[string], Root> = (folder) => {
       }
 
       const src = node.properties.src
+      console.log(node.properties)
       if (typeof src === "string") {
         node.properties.src = rewriteImageSrc(src, folder)
       }
+
+      const float_direction =
+        node.properties.alt === "right"
+          ? "float-right ml-4 mb-2 mt-2"
+          : "float-left mr-4 mb-2 mt-2"
+
+      // Add Tailwind class for styling
+      node.properties.className += ` max-h-[250px] ${float_direction} block `
     })
   }
 }
