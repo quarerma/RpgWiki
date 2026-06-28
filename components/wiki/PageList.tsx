@@ -21,7 +21,7 @@ export function PageList({ pages, imageUrlsByPage }: PageListProps) {
           <li key={page.url}>
             <Link
               href={`/${page.url}`}
-              className="flex h-[80px] space-x-4 items-center justify-between text-start rounded-lg border bg-card p-4 transition-colors hover:bg-accent hover:scale-105 duration-1000"
+              className="flex h-[80px] space-x-4 items-center justify-between text-start rounded-lg border bg-card p-4 transition-all duration-700 ease-out hover:bg-accent hover:scale-105"
             >
               <h2 className="font-semibold ">{page.title}</h2>
               <img
