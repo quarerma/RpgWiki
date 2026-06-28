@@ -27,10 +27,12 @@ function paragraphHasFloatImg(node: Element): boolean {
 
 function appendClassName(existing: unknown, extra: string): string {
   const base = Array.isArray(existing)
-    ? existing.filter((value): value is string => typeof value === "string").join(" ")
+    ? existing
+        .filter((value): value is string => typeof value === "string")
+        .join(" ")
     : typeof existing === "string"
-      ? existing
-      : ""
+    ? existing
+    : ""
 
   return base ? `${base} ${extra}` : extra
 }
@@ -123,6 +125,13 @@ export const rehypeWikiImages: Plugin<[string], HastRoot> = (folder) => {
       if (typeof src === "string") {
         node.properties.src = rewriteImageSrc(src, folder)
       }
+
+      node.properties.className = appendClassName(
+        node.properties.className,
+        "cursor-pointer"
+      )
+      node.properties.onclick =
+        "window.open(this.getAttribute('src'), '_blank', 'noopener,noreferrer')"
 
       const alt = node.properties.alt
       if (!isFloatAlt(alt)) {
