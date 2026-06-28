@@ -5,8 +5,6 @@ import { getPageImagesDir } from "@/lib/wiki/paths"
 
 const PREFERRED_IMAGE_NAMES = ["portrait.png", "portrait.jpg", "portrait.jpeg"]
 
-const IMAGE_EXTENSIONS = /\.(png|jpe?g|gif|webp|svg)$/i
-
 export function getPageImageUrl(folder: string): string | null {
   const imagesDir = getPageImagesDir(folder)
 

@@ -1,3 +1,14 @@
 {
-  "title": "Megaira"
+  "title": "Megaira",
+  "Informação de Personagem": {
+    "Raça": "Tiefling (?)",
+    "Pronomes": "Ela/Dela",
+    "Sexualidade": "Desconhecida",
+    "Alinhamento": "Caótico e Bom",
+    "Idade": "19 anos",
+    "Altura": "1.54m",
+    "Linguagens": ["Comum (aprendendo)", "Dracônico", "Druídico", "Infernal"],
+    "Classe": "Druida do Fogo",
+    "Conexões": ["[[ Xheyotics ]]  "]
+  }
 }

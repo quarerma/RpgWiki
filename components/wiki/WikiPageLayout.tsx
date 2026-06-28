@@ -1,9 +1,9 @@
 import Link from "next/link"
 
+import { cn } from "@/lib/utils"
 import { PageInfo } from "@/lib/wiki/load-page-info"
 import { WikiContent } from "@/components/wiki/WikiContent"
 import { WikiPageInfo } from "@/components/wiki/WikiPageInfo"
-import { cn } from "@/lib/utils"
 
 interface WikiPageLayoutProps {
   title: string
