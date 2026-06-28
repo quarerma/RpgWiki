@@ -4,307 +4,474 @@
       "url": "maya",
       "title": "Maya",
       "type": "character",
-      "search_words": ["maya"]
+      "search_words": [
+        "maya"
+      ]
     },
     {
       "url": "nome",
       "title": "Nome de Bromélia",
       "type": "character",
-      "search_words": ["nome", "bromelia", "nome de bromélia"]
+      "search_words": [
+        "nome",
+        "bromelia",
+        "nome de bromélia"
+      ]
     },
     {
       "url": "ester",
       "title": "Ester",
       "type": "character",
-      "search_words": ["ester", "estrela"]
+      "search_words": [
+        "ester",
+        "estrela"
+      ]
     },
     {
       "url": "xheyotics",
       "title": "Xheyotics",
       "type": "adventuring_party",
-      "search_words": ["xheyotics"]
+      "search_words": [
+        "xheyotics"
+      ]
     },
     {
       "url": "tethyr",
       "title": "Tethyr",
       "type": "location",
-      "search_words": ["tethyr"]
+      "search_words": [
+        "tethyr"
+      ]
     },
     {
       "url": "amn",
       "title": "Amn",
       "type": "location",
-      "search_words": ["amn"]
+      "search_words": [
+        "amn"
+      ]
     },
     {
       "url": "baldurs-gate",
       "title": "Baldurs Gate",
       "type": "location",
-      "search_words": ["baldurs-gate"]
+      "search_words": [
+        "baldurs-gate"
+      ]
     },
     {
       "url": "angla-vled",
       "title": "Angla Vled",
       "type": "location",
-      "search_words": ["angla-vled"]
+      "search_words": [
+        "angla-vled"
+      ]
     },
     {
       "url": "eltugard",
       "title": "Eltugard",
       "type": "location",
-      "search_words": ["eltugard"]
+      "search_words": [
+        "eltugard"
+      ]
     },
     {
       "url": "elturel",
       "title": "Elturel",
       "type": "location",
-      "search_words": ["elturel"]
+      "search_words": [
+        "elturel"
+      ]
     },
     {
       "url": "scornubel",
       "title": "Scornubel",
       "type": "location",
-      "search_words": ["scornubel"]
+      "search_words": [
+        "scornubel"
+      ]
     },
     {
       "url": "nythalos",
       "title": "Nythalos Vaelish",
       "type": "character",
-      "search_words": ["nythalos"]
+      "search_words": [
+        "nythalos"
+      ]
     },
     {
       "url": "semruk",
       "title": "Sem'ruk",
       "type": "character",
-      "search_words": ["semruk"]
+      "search_words": [
+        "semruk"
+      ]
     },
     {
       "url": "arhmranda",
       "title": "Arhmranda Pessac Elmyr",
       "type": "character",
-      "search_words": ["arhmranda", "lady pessac", "pessac"]
+      "search_words": [
+        "arhmranda",
+        "lady pessac",
+        "pessac"
+      ]
     },
     {
       "url": "carlo-razac",
       "title": "Carlo Razac",
       "type": "character",
-      "search_words": ["carlo razac", "carlo"]
+      "search_words": [
+        "carlo razac",
+        "carlo"
+      ]
     },
     {
       "url": "severin-springore",
       "title": "Severin Springore",
       "type": "character",
-      "search_words": ["severin springore", "severin", "springore"]
+      "search_words": [
+        "severin springore",
+        "severin",
+        "springore"
+      ]
     },
     {
       "url": "clamror-errhylon",
       "title": "Clamror Errhylon",
       "type": "character",
-      "search_words": ["clamror errhylon", "clamror", "errhylon"]
+      "search_words": [
+        "clamror errhylon",
+        "clamror",
+        "errhylon"
+      ]
     },
     {
       "url": "nessa-cooperhand",
       "title": "Nessa Cooperhand Longwood",
       "type": "character",
-      "search_words": ["nessa cooperhand", "nessa"]
+      "search_words": [
+        "nessa cooperhand",
+        "nessa"
+      ]
     },
     {
       "url": "ellio-vaelis",
       "title": "Ellio Vaelis Cooperhand",
       "type": "character",
-      "search_words": ["ellio vaelis", "ellio"]
+      "search_words": [
+        "ellio vaelis",
+        "ellio"
+      ]
     },
     {
       "url": "heris",
       "title": "Héris",
       "type": "character",
-      "search_words": ["heris", "ambrose"]
+      "search_words": [
+        "heris",
+        "ambrose"
+      ]
     },
     {
       "url": "arannis",
       "title": "Arannis",
       "type": "character",
-      "search_words": ["arannis"]
+      "search_words": [
+        "arannis"
+      ]
     },
     {
       "url": "araleth",
       "title": "Araleth",
       "type": "character",
-      "search_words": ["araleth"]
+      "search_words": [
+        "araleth"
+      ]
     },
     {
       "url": "megaira",
       "title": "Megaira",
       "type": "character",
-      "search_words": ["megaira"]
+      "search_words": [
+        "megaira"
+      ]
     },
     {
       "url": "kalphyss",
       "title": "Kalphyss",
       "type": "character",
-      "search_words": ["kalphyss"]
+      "search_words": [
+        "kalphyss"
+      ]
     },
     {
       "url": "thorn",
       "title": "Thorn",
       "type": "character",
-      "search_words": ["thorn"]
+      "search_words": [
+        "thorn"
+      ]
     },
     {
       "url": "amrod",
       "title": "Varomir Von Velthrae",
       "type": "character",
-      "search_words": ["amrod", "varomir von velthrae", "varomir"]
+      "search_words": [
+        "amrod",
+        "varomir von velthrae",
+        "varomir"
+      ]
     },
     {
       "url": "elendrica",
       "title": "Elendrica",
       "type": "location",
-      "search_words": ["elendrica"]
+      "search_words": [
+        "elendrica"
+      ]
     },
     {
       "url": "conselho-dos-4",
       "title": "Conselho dos 4",
       "type": "organization",
-      "search_words": ["conselho-dos-4"]
+      "search_words": [
+        "conselho-dos-4"
+      ]
     },
     {
       "url": "alianca-arcana",
       "title": "Alianca arcana",
       "type": "organization",
-      "search_words": ["alianca-arcana"]
+      "search_words": [
+        "alianca-arcana"
+      ]
     },
     {
       "url": "alianca-dos-lordes",
       "title": "Alianca dos lordes",
       "type": "organization",
-      "search_words": ["alianca-dos-lordes"]
+      "search_words": [
+        "alianca-dos-lordes"
+      ]
     },
     {
       "url": "artesaos-da-trama",
       "title": "Artesaos da trama",
       "type": "institution",
-      "search_words": ["artesaos-da-trama"]
+      "search_words": [
+        "artesaos-da-trama"
+      ]
     },
     {
       "url": "academia-das-maravilhas",
       "title": "Academia das maravilhas",
       "type": "establishment",
-      "search_words": ["academia-das-maravilhas"]
+      "search_words": [
+        "academia-das-maravilhas"
+      ]
     },
     {
       "url": "academia-artificie",
       "title": "Academia artificie",
       "type": "establishment",
-      "search_words": ["academia-artificie"]
+      "search_words": [
+        "academia-artificie"
+      ]
     },
     {
       "url": "selunitas",
       "title": "Selunitas",
       "type": "religious-organization",
-      "search_words": ["selunitas"]
+      "search_words": [
+        "selunitas"
+      ]
     },
     {
       "url": "harpistas",
       "title": "Harpistas",
       "type": "institution",
-      "search_words": ["harpistas"]
+      "search_words": [
+        "harpistas"
+      ]
     },
     {
       "url": "os-magesticos",
       "title": "Os Magésticos",
       "type": "adventuring_party",
-      "search_words": ["os-magesticos"]
+      "search_words": [
+        "os-magesticos"
+      ]
     },
     {
       "url": "mystra",
       "title": "Mystra",
       "type": "god",
-      "search_words": ["mystra"]
+      "search_words": [
+        "mystra"
+      ]
     },
     {
       "url": "selune",
       "title": "Selune",
       "type": "god",
-      "search_words": ["selune"]
+      "search_words": [
+        "selune"
+      ]
     },
     {
       "url": "shar",
       "title": "Shar",
       "type": "god",
-      "search_words": ["shar"]
+      "search_words": [
+        "shar"
+      ]
     },
     {
       "url": "bhaal",
       "title": "Bhaal",
       "type": "god",
-      "search_words": ["bhaal"]
+      "search_words": [
+        "bhaal"
+      ]
     },
     {
       "url": "mielikki",
       "title": "Mielikki",
       "type": "god",
-      "search_words": ["mielikki"]
+      "search_words": [
+        "mielikki"
+      ]
     },
     {
       "url": "umberlee",
       "title": "Umberlee",
       "type": "god",
-      "search_words": ["umberlee"]
+      "search_words": [
+        "umberlee"
+      ]
     },
     {
       "url": "leira",
       "title": "Leira",
       "type": "god",
-      "search_words": ["leira"]
+      "search_words": [
+        "leira"
+      ]
     },
     {
       "url": "cyric",
       "title": "Cyric",
       "type": "god",
-      "search_words": ["cyric"]
+      "search_words": [
+        "cyric"
+      ]
     },
     {
       "url": "bahamut",
       "title": "Bahamut",
       "type": "god",
-      "search_words": ["bahamut"]
+      "search_words": [
+        "bahamut"
+      ]
     },
     {
       "url": "tiamat",
       "title": "Tiamat",
       "type": "god",
-      "search_words": ["tiamat"]
+      "search_words": [
+        "tiamat"
+      ]
     },
     {
       "url": "lathander",
       "title": "Lathander",
       "type": "god",
-      "search_words": ["lathander"]
+      "search_words": [
+        "lathander"
+      ]
     },
     {
       "url": "chauntea",
       "title": "Chauntea",
       "type": "god",
-      "search_words": ["chauntea"]
+      "search_words": [
+        "chauntea"
+      ]
     },
     {
       "url": "lolth",
       "title": "Lolth",
       "type": "god",
-      "search_words": ["lolth"]
+      "search_words": [
+        "lolth"
+      ]
     },
     {
       "url": "infinito",
       "title": "Infinito",
       "type": "entity",
-      "search_words": ["infinito"]
+      "search_words": [
+        "infinito"
+      ]
     },
     {
       "url": "amaeraszantha",
       "title": "Amaeraszantha",
       "type": "entity",
-      "search_words": ["amaeraszantha"]
+      "search_words": [
+        "amaeraszantha"
+      ]
+    },
+    {
+      "url": "azura",
+      "title": "Azura",
+      "type": "character",
+      "search_words": [
+        "azura"
+      ]
+    },
+    {
+      "url": "miss-demeanor",
+      "title": "Miss Demeanor",
+      "type": "character",
+      "search_words": [
+        "miss-demeanor",
+        "demeanor"
+      ]
+    },
+    {
+      "url": "tres-olhos",
+      "title": "Tres olhos",
+      "type": "organization",
+      "search_words": [
+        "tres-olhos",
+        "olhos"
+      ]
+    },
+    {
+      "url": "lady-rhessajan",
+      "title": "Lady Rhessajan",
+      "type": "character",
+      "search_words": [
+        "lady-rhessajan"
+      ]
+    },
+    {
+      "url": "mister",
+      "title": "Mister",
+      "type": "character",
+      "search_words": [
+        "mister"
+      ]
+    },
+    {
+      "url": "elkgos",
+      "title": "Elkgos",
+      "type": "character",
+      "search_words": [
+        "elkgos"
+      ]
     }
   ]
 }

@@ -38,7 +38,10 @@ function capitalizeTitle(title: string): string {
   if (!trimmed) {
     return trimmed
   }
-  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1)
+
+  return trimmed
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase())
 }
 
 function titleFromSlug(slug: string): string {
