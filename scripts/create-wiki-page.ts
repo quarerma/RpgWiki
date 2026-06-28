@@ -16,6 +16,7 @@ const PAGE_TEMPLATES_DIR = path.join(__dirname, "page-templates")
 const INFO_TEMPLATES: Record<string, string> = {
   character: path.join(PAGE_TEMPLATES_DIR, "character-info.json"),
   location: path.join(PAGE_TEMPLATES_DIR, "location-info.json"),
+  god: path.join(PAGE_TEMPLATES_DIR, "god-info.json"),
 }
 
 function usage(): never {
@@ -124,9 +125,10 @@ function getDefaultInfo(title: string, type?: string): Record<string, unknown> {
     fail(`Missing info template for type "${type}": ${templatePath}`)
   }
 
-  const template = JSON.parse(
-    readFileSync(templatePath, "utf-8")
-  ) as Record<string, unknown>
+  const template = JSON.parse(readFileSync(templatePath, "utf-8")) as Record<
+    string,
+    unknown
+  >
 
   return { title, ...template }
 }
@@ -190,7 +192,9 @@ function addToRouter(slug: string, title: string, type?: string): void {
 
   writeFileSync(ROUTER_PATH, JSON.stringify(router, null, 2) + "\n", "utf-8")
   const typeLabel = type ? `, type: ${type}` : ""
-  console.log(`[create-page] Added "${title}" to router.json (/${slug}${typeLabel})`)
+  console.log(
+    `[create-page] Added "${title}" to router.json (/${slug}${typeLabel})`
+  )
 }
 
 function main(): void {
@@ -208,7 +212,9 @@ function main(): void {
     addToRouter(slug, title, type)
   }
 
-  console.log(`[create-page] Done. Run "npm run validate-wiki" to refresh the manifest.`)
+  console.log(
+    `[create-page] Done. Run "npm run validate-wiki" to refresh the manifest.`
+  )
 }
 
 main()
