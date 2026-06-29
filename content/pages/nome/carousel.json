@@ -1,0 +1,12 @@
+[
+  {
+    "image_name": "baby_nome.jpg",
+    "image_label": "Nome Criança",
+    "display_default": false
+  },
+  {
+    "image_name": "portrait.png",
+    "image_label": "Nome Adolescente",
+    "display_default": true
+  }
+]
