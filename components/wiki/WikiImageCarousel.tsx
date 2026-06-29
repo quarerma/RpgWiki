@@ -1,14 +1,20 @@
 "use client"
 
-import { useState } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useCallback, useEffect, useState } from "react"
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel"
 import { cn } from "@/lib/utils"
-import { CarouselItem } from "@/lib/wiki/load-carousel"
-import { Button } from "@/components/ui/button"
+import { CarouselItem as WikiCarouselItem } from "@/lib/wiki/load-carousel"
 
 interface WikiImageCarouselProps {
-  items: CarouselItem[]
+  items: WikiCarouselItem[]
   initialIndex: number
   pageTitle: string
 }
@@ -18,55 +24,74 @@ export function WikiImageCarousel({
   initialIndex,
   pageTitle,
 }: WikiImageCarouselProps) {
+  const [api, setApi] = useState<CarouselApi>()
   const [activeIndex, setActiveIndex] = useState(initialIndex)
-  const current = items[activeIndex]
   const hasMultiple = items.length > 1
+  const current = items[activeIndex]
 
-  function goTo(index: number) {
-    setActiveIndex((index + items.length) % items.length)
-  }
+  const onSelect = useCallback((carouselApi: CarouselApi) => {
+    if (!carouselApi) {
+      return
+    }
+    setActiveIndex(carouselApi.selectedScrollSnap())
+  }, [])
+
+  useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    onSelect(api)
+    api.on("select", onSelect)
+
+    return () => {
+      api.off("select", onSelect)
+    }
+  }, [api, onSelect])
 
   return (
     <div>
       {current.label ? (
-        <p className="bg-secondary border border-border my-1 text-center text-sm italic text-muted-foreground">
+        <p className="my-1 border border-border bg-secondary text-center text-sm italic text-muted-foreground">
           {current.label}
         </p>
       ) : null}
-      <div className="relative">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={current.url}
-          alt={current.label || pageTitle}
-          className="h-auto w-full object-cover"
-        />
+      <Carousel
+        setApi={setApi}
+        opts={{
+          startIndex: initialIndex,
+          loop: hasMultiple,
+        }}
+        className="w-full"
+      >
+        <CarouselContent className="-ml-0">
+          {items.map((item) => (
+            <CarouselItem key={item.url} className="pl-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={item.url}
+                alt={item.label || pageTitle}
+                className="h-auto w-full object-cover"
+                draggable={false}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
         {hasMultiple ? (
           <>
-            <Button
-              type="button"
+            <CarouselPrevious
               variant="secondary"
-              size="icon"
-              className="absolute left-1 top-1/2 h-8 w-8 -translate-y-1/2 opacity-80 bg-secondary border border-border rounded-full"
-              onClick={() => goTo(activeIndex - 1)}
-              aria-label="Previous image"
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </Button>
-            <Button
-              type="button"
+              className="left-1 top-1/2 h-8 w-8 -translate-y-1/2 border border-border bg-secondary opacity-80"
+            />
+            <CarouselNext
               variant="secondary"
-              size="icon"
-              className="absolute right-1 top-1/2 h-8 w-8 -translate-y-1/2 opacity-80 bg-secondary border border-border rounded-full"
-              onClick={() => goTo(activeIndex + 1)}
-              aria-label="Next image"
-            >
-              <ChevronRight className="h-6 w-6" />
-            </Button>
+              className="right-1 top-1/2 h-8 w-8 -translate-y-1/2 border border-border bg-secondary opacity-80"
+            />
           </>
         ) : null}
-      </div>
+      </Carousel>
       {hasMultiple ? (
-        <div className="mt-2  mb-2 flex justify-center gap-1.5">
+        <div className="mb-2 mt-2 flex justify-center gap-1.5">
           {items.map((item, index) => (
             <button
               key={item.url}
@@ -77,7 +102,7 @@ export function WikiImageCarousel({
                   ? "bg-foreground"
                   : "bg-muted-foreground/40 hover:bg-muted-foreground/70"
               )}
-              onClick={() => goTo(index)}
+              onClick={() => api?.scrollTo(index)}
               aria-label={`Go to image ${index + 1}`}
               aria-current={index === activeIndex ? "true" : undefined}
             />
