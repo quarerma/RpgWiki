@@ -4,7 +4,10 @@
     "Raça": "Algo entre Fada, Pixie ou outra criação Fey",
     "Pronomes": "Ela/Dela",
     "Sexualidade": "Deve ter alguma",
-    "Também conhecida como": "Mosquito (por [[Thorn]])",
+    "Também conhecida como": [
+      "Mosquito (por [[Thorn]])",
+      "Criança Amaldiçoada (por [[Amaera]])"
+    ],
     "Alinhamento": "Extra Caótico e Bom",
     "Idade": "11 anos",
     "Altura": "30 cm",
