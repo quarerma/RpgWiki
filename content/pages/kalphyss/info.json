@@ -1,3 +1,14 @@
 {
-  "title": "Kalphyss"
+  "title": "Kalphyss",
+  "Informação de Personagem": {
+    "Raça": "Draconato",
+    "Pronomes": "Ele/Dele",
+    "Sexualidade": "Bissexual",
+    "Alinhamento": "Caótico Bom",
+    "Idade": "+20 anos",
+    "Altura": "1.92m",
+    "Linguagens": ["Comum", "Dracônico", "Libras"],
+    "Classe": "Feiticeiro Dracônico",
+    "Conexões": ["[[Xheyotics]]"]
+  }
 }

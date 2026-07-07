@@ -1,3 +1,14 @@
 {
-  "title": "Araleth"
+  "title": "Araleth",
+  "Informação de Personagem": {
+    "Raça": "Elfo Estelar",
+    "Pronomes": "Ela/Dela",
+    "Sexualidade": "Bissexual",
+    "Alinhamento": " (?) ",
+    "Idade": "130 anos",
+    "Altura": "1.80m",
+    "Linguagens": ["Celestial", "Comum", "Élfico", "Sylvano"],
+    "Classe": "Bruxo",
+    "Conexões": ["[[Xheyotics]]", "[[Infinito]]"]
+  }
 }

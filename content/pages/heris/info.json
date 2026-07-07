@@ -1,3 +1,15 @@
 {
-  "title": "Heris"
+  "title": "Heris",
+  "Informação de Personagem": {
+    "Raça": "Elfo",
+    "Pronomes": "Ele/Dele",
+    "Sexualidade": "Bissexual",
+    "Também conhecido como": "Ambrose",
+    "Alinhamento": "[[Neutro Bom]]",
+    "Idade": "+100 anos",
+    "Altura": "1.75m",
+    "Linguagens": ["Comum", "Élfico", "Draconico", "Sylvano"],
+    "Classe": "Patrulheiro",
+    "Conexões": [["[[Xheyotics]]", "[[Chauntea]]"]]
+  }
 }

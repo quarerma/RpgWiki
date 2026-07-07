@@ -1,3 +1,14 @@
 {
-  "title": "Thorn"
+  "title": "Thorn",
+  "Informação de Personagem": {
+    "Raça": "Firbolg",
+    "Pronomes": "Ele/Dele",
+    "Sexualidade": "Homossexual",
+    "Alinhamento": "Neutro Bom",
+    "Idade": "+40 anos",
+    "Altura": "1.95m",
+    "Linguagens": ["Comum", "Gigante", "Sylvano"],
+    "Classe": "Monge",
+    "Conexões": ["[[Xheyotics]]", "[[Mielliki]]"]
+  }
 }
