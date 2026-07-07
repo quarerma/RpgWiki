@@ -17,6 +17,10 @@ export function getPageInfoPath(folder: string): string {
   return path.join(PAGES_DIR, folder, "info.json")
 }
 
+export function getPageCarouselPath(folder: string): string {
+  return path.join(PAGES_DIR, folder, "carousel.json")
+}
+
 export function slugify(text: string): string {
   return text
     .toLowerCase()
