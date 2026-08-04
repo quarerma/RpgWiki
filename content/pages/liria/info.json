@@ -1,0 +1,14 @@
+{
+  "title": "Lady Liria",
+  "Informação de Personagem": {
+    "Raça": "Humana",
+    "Pronomes": "Ela/Dela",
+    "Sexualidade": "Sexo por Mérito",
+    "Títulos": ["Aquela que mutilou Zariel", "Campeã Carmesim", "Comandante dos Cavaleiros Vermelhos",  "Comandante da Marcha da Libertação de Baldurs Gate", "Lady", "Mestra da Estratégia", "Portadora da Espada Vermelha"],
+    "Alinhamento": "Leal e Neutro",
+    "Idade": "~40 anos",
+    "Altura": "1,70m",
+    "Linguagens": ["Comum", "Infernal"],
+    "Conexões": ["[[Tempus]]", "[[Cavaleira Carmesim]]"]
+  }
+}

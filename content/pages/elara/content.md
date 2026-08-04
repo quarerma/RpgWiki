@@ -1,0 +1,3 @@
+**Elara Voss** nasceu em [[Amn]] e cresceu aprendendo que sobreviver significava passar despercebida. Escondeu sua fé, seus poderes e até quem realmente era, vivendo como uma simples curandeira enquanto ajudava os outros em silêncio. O medo nunca a deixou, mas também nunca foi suficiente para fazê-la ignorar o sofrimento de quem cruzava seu caminho.
+
+Ao fugir para [[Tethyr]], encontrou um lugar onde podia existir sem se esconder tanto, mas percebeu que sua liberdade só existia porque outros ainda permaneciam acorrentados em Amn. Entrou para o Lâminas da Alvorada Libérte não por acreditar que mudaria o mundo, mas porque já não conseguia aceitar viver em paz sabendo exatamente o que havia deixado para trás
