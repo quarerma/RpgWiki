@@ -3,12 +3,12 @@
   "Informação de Personagem": {
     "Raça": "Tiefling",
     "Pronomes": "Ela/Dela",
-    "Sexualidade": "",
-    "Também conhecido como": "",
-    "Alinhamento": "",
-    "Idade": "",
-    "Altura": "",
-    "Linguagens": [],
+    "Sexualidade": "Bissexual",
+    "Também conhecido como": "Lana",
+    "Alinhamento": "Leal e Bom",
+    "Idade": "28 anos",
+    "Altura": "1,65 m",
+    "Linguagens": ["Comum", "Infernal", "Amniano"],
     "Classe": "Barda",
     "Conexões": ["[[Quebracorrente]]"]
   }
