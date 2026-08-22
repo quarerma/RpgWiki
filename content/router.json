@@ -545,6 +545,14 @@
       "search_words": [
         "ilana"
       ]
+    },
+    {
+      "url": "miralys",
+      "title": "Miralys",
+      "type": "entity",
+      "search_words": [
+        "miralys"
+      ]
     }
   ]
 }
