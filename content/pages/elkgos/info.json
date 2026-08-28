@@ -4,7 +4,7 @@
     "Raça": "Drow",
     "Pronomes": "Ele/Dele",
     "Sexualidade": "Não definida",
-    "Também conhecido como": "Elk",
+    "Também conhecido como": ["Elk", "Lâmina do Echo"],
     "Alinhamento": "Desconhecido",
     "Idade": "+110 anos",
     "Altura": "1.80m",
@@ -15,7 +15,7 @@
       "Élfico",
       "Thieves' Cant"
     ],
-    "Classe": "Mercador",
-    "Conexões": "-"
+    "Classe": "-",
+    "Conexões": "[[Zentharim]]"
   }
 }
