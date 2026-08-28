@@ -1,0 +1,12 @@
+[
+  {
+    "image_name": "araleth_2.jpg",
+    "image_label": "Araleth",
+    "display_default": true
+  },
+  {
+    "image_name": "araleth_body.png",
+    "image_label": "Araleth",
+    "display_default": false
+  }
+]
